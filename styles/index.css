@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+html {
+  font-size: 62.5%;
+  color: white;
+}
+
+body {
+  background: #040833;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Space Mono", monospace;
+  font-size: 3rem;
+  color: #00ffb3;
+}
+
+h3 {
+  font-family: "Space Mono", monospace;
+}
+
+h5 {
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-container {
+  width: 30%;
+  margin: 200px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.options h5 {
+  padding: 10px 20px;
+  border: 1px solid white;
+}
+
+.options h5 :hover {
+  color: #00ffb3;
+}
+
+.game-container {
+  width: 30%;
+  margin: 200px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.game-container img {
+  width: 50%;
+  margin-right: 3rem;
+}
+
+.game-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.img-gallery {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.img-card {
+  padding: 1rem;
+  border: 1px solid white;
+  width: 30%;
+}
+
+.img-card img {
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */
