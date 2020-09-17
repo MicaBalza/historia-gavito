@@ -1,4 +1,4 @@
-# Página Ayuda para el finald de Historia Gavito II - FADU - UBA
+# Página Ayuda para el final de Historia Gavito II - FADU - UBA
 
 Tres funciones principales:
 
