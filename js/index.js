@@ -1,3 +1,5 @@
+// ----- CHANGE THEME
+
 let root = document.documentElement;
 let themeSelect = document.querySelector("#theme-select");
 
@@ -16,6 +18,18 @@ function changeTheme(e) {
     root.style.setProperty("--color-accent", "");
   }
 }
+
+// ----- GET USER NAME
+function getName() {
+  localStorage.setItem("username", document.querySelector("#name-input").value);
+  let blur = document.querySelector("#modal-background");
+  blur.style.display = "none";
+  document.querySelector(
+    "#saludo"
+  ).innerHTML = `VAMOS QUE LA SACAMOS ${localStorage.username.toUpperCase()} !`;
+}
+
+// -----
 
 var period = [
   "Modernidad",

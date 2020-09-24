@@ -8,10 +8,29 @@
     <title>VAMOS QUE LA SACAMOS</title>
   </head>
   <body>
-    <select id="theme-select" class="top-right" name="select">
-      <option value="light" selected>Light Mode&nbsp</option>
-      <option value="dark">Dark Mode&nbsp</option>
-    </select>
+    <div id="modal-background">
+      <div id="modal-username">
+        <h2>Bienvenido!</h2>
+        <h3>Ingresa tu nombre:</h3>
+        <form id="name-form" onsubmit="getName(); return false">
+          <input type="text" name="username" id="name-input" />
+          <input type="submit" value="Ingresar" />
+        </form>
+      </div>
+    </div>
+
+    <div class="nav-menu">
+      <h3><a href="index.html" id="saludo"></a></h3>
+      <div class="nav-options">
+        <a href="#">Juego</a>
+        <a href="/practice.html">Práctica</a>
+        <a href="/gallery.html">Imágenes</a>
+      </div>
+      <select id="theme-select" name="select">
+        <option value="light" selected>Light Mode&nbsp</option>
+        <option value="dark">Dark Mode&nbsp</option>
+      </select>
+    </div>
     <div class="main-container">
       <h1>VAMOS QUE LA SACAMOS</h1>
       <h3>Final de Historia II - Cátedra Gavito</h3>
