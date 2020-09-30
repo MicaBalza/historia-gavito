@@ -195,7 +195,7 @@ a {
 
 /* ----- PRACTICE ----- */
 
-.practice-intro {
+#practice-intro {
   width: 50%;
   margin: 100px auto;
   text-align: center;
@@ -203,6 +203,21 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#practice-content {
+  width: 50%;
+  margin: 100px auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#practice-content img {
+  max-width: 300px;
 }
 
 /* ----- GALLERY ----- */

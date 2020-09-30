@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <script defer src="js/index.js"></script>
+    <script defer src="js/db.js"></script>
     <script defer src="js/themes.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js" integrity="sha512-lteuRD+aUENrZPTXWFRPTBcDDxIGWe5uu0apPEn+3ZKYDwDaEErIK9rvR0QzUGmUQ55KFE2RqGTVoZsKctGMVw==" crossorigin="anonymous"></script>
     <title>VAMOS QUE LA SACAMOS</title>
   </head>
   <body>
@@ -21,14 +24,17 @@
         <option value="dark">Dark Mode&nbsp</option>
       </select>
     </div>
-    <div class="practice-intro">
+    <div id="practice-intro">
       <h1>Práctica</h1>
       <h3>
         Se te mostrará una imagen al azar y tres palabras clave. <br />Tendrás
         10 minutos para hablar sobre ésta. <br />¿Estás listo?
       </h3>
-      <h5 class="button"><a href="/game.html">Comenzar</a></h5>
+      <h5 class="button"><a onclick="showPractice()">Comenzar</a></h5>
         <h5>
+    </div>
+    <div id="practice-content">
+      <div id="clock"></div>
     </div>
   </body>
 </html>
