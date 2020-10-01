@@ -10,7 +10,7 @@ function showModal() {
   } else if (!localStorage.username) {
     document.body.insertAdjacentHTML(
       "afterbegin",
-      '<div id="modal-background"><div id="modal-username"><h2>Bienvenido!</h2><h3>Ingresa tu nombre:</h3><form id="name-form" onsubmit="getName(); return false"><input type="text" name="username" id="name-input" /><input type="submit" value="Ingresar"/></form></div></div>'
+      '<div id="modal-background"><div id="modal-username"><h2>Bienvenidx!</h2><h3>Por favor, ingresá tu nombre:</h3><form id="name-form" autocomplete="off" onsubmit="getName(); return false"><input type="text" name="username" id="name-input" /><input type="submit" value="Ingresar"/></form></div></div>'
     );
   }
 }
