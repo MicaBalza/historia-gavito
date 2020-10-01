@@ -41,18 +41,23 @@ function selectImage() {
     .insertAdjacentHTML("afterbegin", `<img src="assets/img/${id}.jpg">`);
 }
 
+// Mostrar 3 tags "palabras clave" al usuario
 function selectWords() {
-  // Función para eventualmente mostrarle 3 tags "palabras clave" al usuario
-  let palabra1 = tags[Math.floor(Math.random() * tags.length)];
-  let palabra2 = tags[Math.floor(Math.random() * tags.length)];
-  let palabra3 = tags[Math.floor(Math.random() * tags.length)];
+  // Hacer que no se repitan
+  var randomsSet = new Set();
+  while (randomsSet.size < 3) {
+    randomsSet.add(1 + Math.floor(Math.random() * (tags.length - 1)));
+  }
+  var randoms = [...randomsSet];
+  let palabra1 = tags[randoms[0]];
+  let palabra2 = tags[randoms[1]];
+  let palabra3 = tags[randoms[2]];
   document
     .querySelector("#practice-content")
     .insertAdjacentHTML(
       "afterbegin",
       `<p>${palabra1}</p><p>${palabra2}</p><p>${palabra3}</p>`
     );
-  // Acá faltaría un if para chequear que los números no se repitan, o buscar como se pueden generar números random diferentes
 }
 
 function timer() {
@@ -65,7 +70,7 @@ function timer() {
       if (event.elapsed) {
         $this.html(event.strftime("TIEMPO !"));
       } else {
-        $this.html(event.strftime("<span>%H:%M:%S</span>"));
+        $this.html(event.strftime("%H:%M:%S"));
       }
     });
 }
