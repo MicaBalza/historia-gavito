@@ -35,7 +35,7 @@ function showPractice() {
 }
 
 function selectImage() {
-  let id = Math.floor(Math.random() * 20);
+  let id = Math.floor(Math.random() * images.length);
   document
     .querySelector("#practice-content")
     .insertAdjacentHTML("afterbegin", `<img src="assets/img/${id}.jpg">`);
